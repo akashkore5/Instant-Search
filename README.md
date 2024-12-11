@@ -41,47 +41,23 @@ Place a Names.csv file in the root directory of the project. This file should co
 
 3. **Build and run the application**:
 
-Using Maven:
-./mvnw spring-boot:run
-Or using Gradle:
-./gradlew bootRun
+   Using Maven:
+```bash./mvnw spring-boot:run
+   Or using Gradle:
+```bash./gradlew bootRun
 
-4.**Access the application**:
+4. **Access the application**:
 
-Once the application is running, open a web browser and go to:
-http://localhost:8080
-You'll see a search box where you can input your query.
+   Once the application is running, open a web browser and go to:
+   http://localhost:8080
+   You'll see a search box where you can input your query.
 
-Endpoints
-GET /: Displays the main search page where users can enter their queries.
-GET /search: Handles the search logic. Accepts a query parameter q to perform the search. Returns the search results along with the response time.
-How to Use
-Enter a query in the search box and click the "Search" button.
-The results will be displayed below the search box, showing matching names and their rank based on the search criteria.
-The application supports both prefix-based search (starts with the query) and substring-based search (contains the query but not necessarily at the start).
-If a query is repeated, the search results will be retrieved from the cache for faster performance.
-Example
-Example CSV file (Names.csv):
-Copy code
-Alice
-Bob
-Charlie
-David
-Eve
-Frank
-Grace
-Hannah
-Ivy
-Jack
-Example Search Query:
-Query: "Al"
-Results: The names starting with "Al" (e.g., "Alice") will appear at the top.
-Performance Considerations
-Caching: The application caches search results for identical queries, which significantly improves performance for repeated searches.
-Trie for prefix search: The Trie data structure ensures that prefix searches are highly efficient, reducing the time complexity of prefix lookups.
-Troubleshooting
-Empty results: If no results are returned, ensure that the query is at least 3 characters long and that the CSV file is correctly formatted.
-Error handling: Queries with less than 3 characters will show an error message.
-Future Improvements
-UI Enhancements: Improve the user interface with better design and features such as auto-suggestions.
-Advanced search algorithms: Consider integrating more advanced search algorithms, such as fuzzy search or Levenshtein distance, for handling typos or approximate matches.
+##Endpoints
+   GET /: Displays the main search page where users can enter their queries.
+   GET /search: Handles the search logic. Accepts a query parameter q to perform the search. Returns the search results along with the response time.
+   **How to Use**
+      Enter a query in the search box and click the "Search" button.
+      The results will be displayed below the search box, showing matching names and their rank based on the search criteria.
+      The application supports both prefix-based search (starts with the query) and substring-based search (contains the query but not necessarily at the start).
+      If a query is repeated, the search results will be retrieved from the cache for faster performance.
+
