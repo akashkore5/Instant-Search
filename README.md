@@ -68,10 +68,10 @@ Place a Names.csv file in the root directory of the project. This file should co
 3. **Build and run the application**:
 
    Using Maven:
-   ```bash./mvnw spring-boot:run
+       ```bash./mvnw spring-boot:run
 
    Or using Gradle:
-   ```bash./gradlew bootRun
+       ```bash./gradlew bootRun
 
 4. **Access the application**:
    Once the application is running, open a web browser and go to:
