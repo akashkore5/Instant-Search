@@ -6,18 +6,18 @@ This is a simple web application built with Spring Boot that allows users to sea
 
 ### Python Script to Generate Fake Names
 
-```python
-from faker import Faker
+    ```python
+    from faker import Faker
 
-# Initialize Faker instance
-fake = Faker()
+    # Initialize Faker instance
+    fake = Faker()
 
-# Generate 300,000 fake names
-names = [fake.name() for _ in range(300000)]
+    # Generate 300,000 fake names
+    names = [fake.name() for _ in range(300000)]
 
-# Write the names to a CSV file
-with open('Names.csv', 'w') as f:
-    f.write("\n".join(names))
+    # Write the names to a CSV file
+    with open('Names.csv', 'w') as f:
+        f.write("\n".join(names))
 
 ## Features
 
