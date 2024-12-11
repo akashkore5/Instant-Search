@@ -42,17 +42,17 @@ Place a Names.csv file in the root directory of the project. This file should co
 3. **Build and run the application**:
 
    Using Maven:
-```bash./mvnw spring-boot:run
+   ```bash./mvnw spring-boot:run
+
    Or using Gradle:
-```bash./gradlew bootRun
+   ```bash./gradlew bootRun
 
 4. **Access the application**:
-
    Once the application is running, open a web browser and go to:
    http://localhost:8080
    You'll see a search box where you can input your query.
 
-##Endpoints
+## Endpoints
    GET /: Displays the main search page where users can enter their queries.
    GET /search: Handles the search logic. Accepts a query parameter q to perform the search. Returns the search results along with the response time.
    **How to Use**
